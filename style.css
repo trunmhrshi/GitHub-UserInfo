@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+.fas{
+    color: red;
+}
+body{
+     /* background: linear-gradient(70deg, #fff810  35%, rgba(0,0,0,0) 35%), linear-gradient(30deg, #63e89e 65%, #ff7ee3 65%); */
+    /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)); */
+    background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.gitlogo{
+    /* position: absolute; */
+
+    margin-bottom: 1rem;
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+}
+input{
+    /* background-color: #581212; */
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+input:focus{
+    outline: none;
+}
+.card{
+    color: #fff;
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    /*  */
+    padding: 2rem;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(41, 41, 43, 0.5), 0 15px 40px rgba(17, 17, 17, 0.2);
+    max-width: 700px;
+}
+.avatar{
+    width: 130px;
+    height: 130px;
+    border: 10px solid rgba(47, 48, 136, 0.582);
+    border-radius: 50%;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-info{
+    margin-left: 2rem;
+    color: white;
+}
+.user-info h2{
+    margin-top: 0;
+    color: #5eff00;
+}
+
+.user-info ul{
+    display: flex;
+    justify-content:space-between;
+    max-width: 50vh;
+    list-style-type: none;
+    padding: 0;
+    
+}
+.user-info ul li{
+    display: flex;
+    align-items: center;
+}
+.user-info ul li strong {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    color: orange;
+    margin-right: .9rem;
+}
+.repo {
+  color: rgb(242, 246, 247);
+  background-color: rgba(32, 29, 199, 0.801);
+  display: inline-block;
+  padding: 0.25rem 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+.num{
+    color: rgb(0, 255, 255);
+}
+:root{
+    --primary-color: #e7e8ebe0;
+    --secondary-color: #581212;
+    
+  }
+  .dark-theme{
+    --primary-color: #000106a6;
+    --secondary-color: rgba(252, 252, 252, 0.863);
+    background:  url(https://wallpaper.dog/large/5569238.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+  }
+  .dark-theme .avatar{
+    border: 10px solid var(--primary-color);
+  }
+  #icon{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: -8px;
+    
+  }
+  .dark-theme #search{
+      color: rgb(0, 0, 0);
+  }
+  .dark-theme .card{
+    background-color: #3a2b2b;
+    background-image: linear-gradient(315deg, #495555 0%, #2c3036 74%);
+  }
+  .dark-theme .repo{
+      background-color: #000106ce;
+      color: white;
+      
+  }
+  .dark-theme .user-info ul li strong{
+      color: #fffb00;
+  }
+  .dark-theme footer{
+      color: yellow;
+  }
+footer{
+      color: rgb(0, 0, 0);
+  }
+  .developer{
+      margin-top: 20px;
+      /* bottom: 8vh; */
+  }
